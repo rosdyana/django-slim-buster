@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -qq -y  build-essential --no-install-recom
     apt-get install -qq -y build-essential --no-install-recommends && \
     apt-get install -qq -y postgresql-client --no-install-recommends && \
     apt-get install -qq -y bash --no-install-recommends && \
-    apt-get install -qq -y libpq-dev --no-install-recommends
+    apt-get install -qq -y libpq-dev --no-install-recommends && \
+    apt-get install -qq -y git --no-install-recommends
 
 RUN python3.8 -m venv /root/site
 RUN ${PIP3} install -U pip
