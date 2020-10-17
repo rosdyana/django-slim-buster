@@ -6,6 +6,7 @@ ARG PIP3="/root/site/bin/pip3"
 RUN apt-get update && apt-get install -qq -y  build-essential --no-install-recommends && \
     apt-get install -qq -y build-essential --no-install-recommends && \
     apt-get install -qq -y postgresql-client --no-install-recommends && \
+    apt-get install -qq -y gettext --no-install-recommends && \
     apt-get install -qq -y bash --no-install-recommends && \
     apt-get install -qq -y libpq-dev --no-install-recommends && \
     apt-get install -qq -y git --no-install-recommends
